@@ -17,7 +17,7 @@ I don't have any experince, I'm just a student from the BSU who wants to develop
 - Basic Git practise
 - Basic C++
 - Basic JS, also node.js
-- Some simple frameworks(for example, Bootstrap)
+- Some simple frameworks (for example, Bootstrap)
 
 ## Code:
     	location /streets {
@@ -51,8 +51,8 @@ I don't have any experince, I'm just a student from the BSU who wants to develop
 - IT-camp MyFreedom, 2017
 - BSU IT-school for high school students, 2019
 
-## Education
+## Education:
 - Belarusian State University, 1st year
 
-## English 
+## English: 
 **CEFR level B1, Streamline, 2016**
