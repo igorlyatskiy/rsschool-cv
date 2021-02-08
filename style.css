@@ -52,21 +52,17 @@ img {
 
 section {
 	width: 100%;
-	padding-top: 3vh;
 	display: inline-flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	padding-bottom: 4vh;
 }
 
-article {
+pre {
+	font-style: italic;
 	background-color: rgb(233, 233, 233);
 	border-radius: 2vw;
 	margin-bottom: 5vh;
-}
-
-code {
-	font-style: italic;
 }
 
 h2 {
