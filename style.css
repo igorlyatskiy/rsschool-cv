@@ -9,9 +9,6 @@ body {
 	margin: 4vw 10vw;
 }
 
-div.container {
-}
-
 h1 {
 	text-align: center;
 	padding-bottom: 4vh;
@@ -62,15 +59,40 @@ section {
 	padding-bottom: 4vh;
 }
 
-footer {
+article {
 	background-color: rgb(233, 233, 233);
 	border-radius: 2vw;
+	margin-bottom: 5vh;
 }
 
 code {
 	font-style: italic;
 }
 
-article {
+h2 {
 	padding-top: 2.5vh;
+}
+
+footer {
+	padding-top: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#logo {
+	background: url("/images/rs_school_js.svg") no-repeat;
+	height: 100px;
+	width: 100px;
+}
+
+#youtube {
+	background: url("/images/YouTube_full-color_icon_\(2017\).svg") no-repeat;
+	height: 100px;
+	width: 100px;
 }
