@@ -74,25 +74,27 @@ h2 {
 }
 
 footer {
-	padding-top: 5vh;
+	padding-top: 2vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-content: center;
 }
 
 a {
 	text-decoration: none;
 	color: black;
+	display: flex;
+	margin: auto 0;
 }
 
-#logo {
-	background: url("/images/rs_school_js.svg") no-repeat;
-	height: 100px;
-	width: 100px;
+span {
+	margin: auto 0;
 }
 
-#youtube {
-	background: url("/images/YouTube_full-color_icon_\(2017\).svg") no-repeat;
-	height: 100px;
+.footer-img {
+	border: 0;
 	width: 100px;
+	height: 100px;
+	margin: 0 auto;
 }
