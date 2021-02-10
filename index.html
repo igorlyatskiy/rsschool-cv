@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML, CSS & Git Basics</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Igor Lyatskiy</h1>
+	</header>
+	<hr>
+	<main>
+		<div class="display-flex-inline">
+			<h2>Short information about me: </h2>
+			<p>Studying is my aim. I really want to get some new professional skills in Frontend-development, I
+				really
+				like
+				this direction. That’s why I’m here. I don’t have any experince, I’m just a student from the BSU who
+				wants to
+				develop his skills and who can do this, I hope. I think, I’m a hardworking person.</p>
+			<h2>Contacts:</h2>
+			<ul class="container-ul-contacts">
+				<li>E-mail:
+					<ul class="white-list">
+						<li>igor.lyatskiy@gmail.com</li>
+						<li>igor.lyatskiy@mail.ru</li>
+					</ul>
+				</li>
+				<li>Phone number: +375296564832</li>
+			</ul>
+		</div>
+		<div class="display-flex-inline">
+			<img src="images/myPhoto.jpg" alt="My photo" title="Igor Lyatskiy">
+		</div>
+	</main>
+	<section>
+		<div class="flex-inline-skills">
+			<h2>My skills:</h2>
+			<ul class="container-ul-contacts">
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>Basic Git practise</li>
+				<li>Basic C++</li>
+				<li>Basic JS, also node.js</li>
+				<li>Some simple frameworks <br> (for example, Bootstrap)</li>
+			</ul>
+		</div>
+		<div class="flex-inline-skills">
+			<h2>Courses:
+			</h2>
+			<ul class="container-ul-contacts">
+				<li>Summer camp from “ШАГ”, 2016</li>
+				<li>IT-camp MyFreedom, 2017</li>
+				<li>BSU IT-school for high school students, 2019</li>
+			</ul>
+		</div>
+		<div class="flex-inline-skills">
+			<h2>Education:
+			</h2>
+			<p>Belarusian State University,<br> 1st year</p>
+		</div>
+		<div class="flex-inline-skills">
+			<h2>English:
+			</h2>
+			<strong>CEFR level B1, Streamline, 2016</strong>
+		</div>
+	</section>
+	<hr>
+	<article>
+		<h2>Code:</h2>
+		<pre>
+
+	location /streets {
+		
+	lua_code_cache off;
+	content_by_lua_block { 
+			response = ngx.location.capture (
+															'/api/v1/streets', { 
+															always_forward_body = true, 
+															copy_all_vars = true})
+
+			if response.status &gt; 500 then 
+					ngx.exit(response.status)
+			end
+
+			local cjson = require("cjson")
+			streets = cjson.decode(response.body)
+
+
+			local template = require "resty.template";
+			local template_string = ngx.location.capture("/templates/lua/streets.html")
+
+			template.render(template_string.body, {
+					items = streets
+				})          
+			}
+		}
+		</pre>
+	</article>
+	<hr>
+	<footer>
+		<a href="https://github.com/igorlyatskiy">My Github</a>
+		<span>This page was made at <b>2021</b></span>
+		<a href="https://rs.school/js/" id="logo"><img src="images/rs_school_js.svg" alt="RS School" class="footer-img"
+				title="RS school"></a>
+		<a href="https://youtu.be/3OF1xrzC0_k" id="youtube"><img src="images/YouTube_full-color_icon_(2017).svg"
+				class="footer-img" alt="Youtube" title="Self-review"></a>
+	</footer>
+</body>
+
+</html>
